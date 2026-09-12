@@ -31,8 +31,9 @@ $stmt->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dashboard/style.css">
 
-    <title>My Profile - Spendly</title>
+    <title>My Profile - FloStack</title>
 </head>
 
 <body>
@@ -64,7 +65,7 @@ $stmt->close();
 
     &nbsp;&nbsp;
 
-    <a href="../auth/logout.php">Logout</a>
+    <a href="../auth/logout.php" class="logout-link">Logout</a>
 
 </body>
 

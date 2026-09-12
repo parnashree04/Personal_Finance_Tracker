@@ -1,6 +1,6 @@
 :root {
-    --primary: #2f6f4e;
-    --primary-dark: #234f38;
+    --primary: #6f3e2f;
+    --primary-dark: #970c0c;
     --bg-start: #eaf4ee;
     --bg-end: #dcecdf;
     --text: #223028;
@@ -171,13 +171,13 @@ button:active {
 
 .dashboard-card .subtitle {
     margin-bottom: 24px;
-}
+} 
 
 .logout-link {
     display: inline-block;
     padding: 10px 24px;
     border-radius: 9px;
-    background: var(--primary);
+    background: #c96b5b !important;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -186,5 +186,6 @@ button:active {
 }
 
 .logout-link:hover {
-    background: var(--primary-dark);
+    background: #b95748 !important;
 }
+
