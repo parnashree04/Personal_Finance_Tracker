@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="field">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+                <input type="password" id="password" name="password" placeholder="At least 6 characters" required>
             </div>
             <button type="submit">Register</button>
         </form>
