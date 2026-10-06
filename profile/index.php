@@ -82,7 +82,7 @@ $stmt->close();
 
     <br>
 
-    <a href="../dashboard/index.php">Go to Dashboard →</a>
+    <a href="http://localhost:5173/">Go to Dashboard →</a>
 
     &nbsp;&nbsp;
 

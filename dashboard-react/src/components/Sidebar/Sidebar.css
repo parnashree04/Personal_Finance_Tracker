@@ -1,0 +1,82 @@
+.sidebar {
+  width: 240px;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar-brand {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-brand h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--white);
+  margin: 0;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem 0.75rem;
+}
+
+/* NavLink styling */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 0.925rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-item.active {
+  background-color: var(--primary-light);
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+  }
+
+  .sidebar-brand h2,
+  .nav-item span:nth-child(2) {
+    display: none;
+  }
+
+  .sidebar-brand {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 0.75rem;
+  }
+}

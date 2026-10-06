@@ -1,0 +1,43 @@
+/* ==========================================================
+   FloStack React Theme
+   ========================================================== */
+
+:root {
+    --primary-dark: #2f49c7;
+    --primary: #3d5ce2;
+    --primary-light: #6c86ea;
+
+    --bg: #e3f0e7;
+    --text-dark: #223028;
+    --text-muted: #6b7d72;
+
+    --white: #ffffff;
+
+    --border: #d9e6dd;
+
+    --danger: #e52d45;
+    --danger-hover: #c92137;
+
+    --card-bg: #ffffff;
+
+    --input-bg: #f0f4fc;
+
+    --radius: 14px;
+
+    --shadow: 0 10px 30px rgba(61, 92, 226, 0.15);
+}
+body.dark-mode {
+    --bg: #121827;
+    --text-dark: #f1f5f9;
+    --text-muted: #94a3b8;
+
+    --white: #1e293b;
+
+    --border: #334155;
+
+    --card-bg: #1e293b;
+
+    --input-bg: #273449;
+
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}

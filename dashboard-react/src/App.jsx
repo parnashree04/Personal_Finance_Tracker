@@ -1,31 +1,27 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import DashboardPage from './pages/DashboardPage';
+import TransactionsPage from './pages/TransactionsPage';
+import SavingsGoalsPage from './pages/SavingsGoalsPage';
+import ReportsPage from './pages/ReportsPage';
+import SettingsPage from './pages/SettingsPage';
 function App() {
   return (
-    <div>
-      <h1>FloStack Dashboard</h1>
+    <BrowserRouter>
+      <Routes>
 
-      <p>Welcome to your Personal Finance Tracker</p>
+        {/* Dashboard */}
+        <Route path="/" element={<DashboardPage />} />
 
-      <div>
-        <h2>Balance</h2>
-        <h3>₹25,500</h3>
-      </div>
+        {/* Other pages - we'll create these next */}
+        <Route path="/transactions" element={<TransactionsPage />} />
+        <Route path="/savings" element={<SavingsGoalsPage />} />
+        <Route path="/reports" element={<ReportsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
 
-      <div>
-        <h2>Income</h2>
-        <h3>₹40,000</h3>
-      </div>
-
-      <div>
-        <h2>Expenses</h2>
-        <h3>₹14,500</h3>
-      </div>
-
-      <div>
-        <h2>Savings</h2>
-        <h3>₹25,500</h3>
-      </div>
-    </div>
-  )
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

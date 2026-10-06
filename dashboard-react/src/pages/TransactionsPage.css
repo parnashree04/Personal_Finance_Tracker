@@ -1,0 +1,160 @@
+/* ==============================
+   Transactions Page
+   ============================== */
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.transaction-header h2 {
+  margin: 0;
+}
+
+/* ==============================
+   Add Transaction Button
+   ============================== */
+
+.btn-add-transaction {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-add-transaction:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ==============================
+   Transaction Form
+   ============================== */
+
+.transaction-form {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.transaction-form h3 {
+  margin-top: 0;
+  color: var(--text-dark);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group select {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-dark);
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ==============================
+   Form Buttons
+   ============================== */
+
+.btn-save-transaction {
+  background-color: #10b981;
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-cancel-transaction {
+  background-color: var(--text-muted);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==============================
+   Transaction Amounts
+   ============================== */
+
+.transaction-income {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.transaction-expense {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.month-section {
+  margin-bottom: 2rem;
+}
+
+.month-heading {
+  margin: 0 0 1rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2f49c7;
+  background: #f1f5ff;
+  border-radius: 8px;
+}
+
+.transaction-search {
+  display: flex;
+  align-items: center;
+}
+
+.transaction-search input {
+  width: 280px;
+  height: 42px;
+  padding: 0 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.transaction-search input::placeholder {
+  color: #94a3b8;
+}
+
+.transaction-search input:focus {
+  border-color: #2f49c7;
+  box-shadow: 0 0 0 3px rgba(47, 73, 199, 0.12);
+}
