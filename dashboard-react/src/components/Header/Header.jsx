@@ -9,6 +9,10 @@ const Header = ({ userName = 'FloStack User' }) => {
     .toUpperCase()
     .slice(0, 2);
 
+  const handleProfileClick = () => {
+    window.location.href = 'http://localhost/Personal_Finance_Tracker/profile/index.php';
+  };
+
   return (
     <header className="header">
       <div className="header-left">
@@ -16,14 +20,32 @@ const Header = ({ userName = 'FloStack User' }) => {
       </div>
 
       <div className="header-right">
-        <div className="user-profile">
+        <button
+          type="button"
+          className="user-profile"
+          onClick={handleProfileClick}
+          title="Go to Profile"
+          aria-label="Go to Profile"
+          style={{
+            border: 'none',
+            cursor: 'pointer',
+            font: 'inherit',
+            textAlign: 'left',
+            background: 'transparent',
+            color: 'inherit',
+            padding: 0,
+            boxShadow: 'none',
+            appearance: 'none',
+            WebkitAppearance: 'none'
+          }}
+        >
           <div className="avatar">{initials}</div>
 
           <div className="user-info">
             <span className="user-name">{userName}</span>
             <span className="user-role">Personal Account</span>
           </div>
-        </div>
+        </button>
       </div>
     </header>
   );
